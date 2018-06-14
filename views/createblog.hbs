@@ -1,0 +1,11 @@
+ <form action="/createblog" method="post">
+   <select name="users">
+     {{#each users}}
+  <option value="{{id}}">{{name}}</option>
+    {{/each}}  
+   </select> <br>
+
+  title: <input type="text" name="title"><br>
+  content: <textarea rows='10' name="content"> </textarea> <br>
+  <input type="submit" value="Submit">
+</form> 
